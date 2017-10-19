@@ -120,7 +120,7 @@ def main(exps, model_type, aux, data, num_steps,num_samples=16,hdim=10,num_test=
         np.save(directory_name+'pf.npy',pf)
         if exps == 'post2tra':
             return X,post_img[choices[:,0],np.arange(num_test)]
-    return {'res':results,'ais_time':ais_time,'iwae_time:':iwae_time} 
+    return {'res':results,'ais_time':ais_time,'iwae_time':iwae_time} 
 
 
 if __name__ == "__main__":
